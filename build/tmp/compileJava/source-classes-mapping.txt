@@ -1,0 +1,35 @@
+io/quarkus/example/HelloRequest.java
+ io.quarkus.example.HelloRequest
+ io.quarkus.example.HelloRequest$1
+ io.quarkus.example.HelloRequest$Builder
+HelloService.java
+ HelloService
+io/quarkus/example/GreeterGrpc.java
+ io.quarkus.example.GreeterGrpc
+ io.quarkus.example.GreeterGrpc$1
+ io.quarkus.example.GreeterGrpc$2
+ io.quarkus.example.GreeterGrpc$3
+ io.quarkus.example.GreeterGrpc$GreeterBaseDescriptorSupplier
+ io.quarkus.example.GreeterGrpc$GreeterBlockingStub
+ io.quarkus.example.GreeterGrpc$GreeterFileDescriptorSupplier
+ io.quarkus.example.GreeterGrpc$GreeterFutureStub
+ io.quarkus.example.GreeterGrpc$GreeterImplBase
+ io.quarkus.example.GreeterGrpc$GreeterMethodDescriptorSupplier
+ io.quarkus.example.GreeterGrpc$GreeterStub
+ io.quarkus.example.GreeterGrpc$MethodHandlers
+io/quarkus/example/HelloReply.java
+ io.quarkus.example.HelloReply
+ io.quarkus.example.HelloReply$1
+ io.quarkus.example.HelloReply$Builder
+GreeterImpl.java
+ GreeterImpl
+io/quarkus/example/HelloRequestOrBuilder.java
+ io.quarkus.example.HelloRequestOrBuilder
+HelloWorldClient.java
+ HelloWorldClient
+io/quarkus/example/HelloReplyOrBuilder.java
+ io.quarkus.example.HelloReplyOrBuilder
+io/quarkus/example/HelloWorldProto.java
+ io.quarkus.example.HelloWorldProto
+HelloWorldServer.java
+ HelloWorldServer
