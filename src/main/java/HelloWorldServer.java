@@ -4,6 +4,7 @@ import io.grpc.ServerBuilder;
 import java.io.IOException;
 
 public class HelloWorldServer {
+
     public static void main(String args[]) throws IOException, InterruptedException {
         Server server = ServerBuilder.forPort(9091).addService(new HelloService()).build();
 
@@ -11,6 +12,8 @@ public class HelloWorldServer {
 
         System.out.println("The server started on " + server.getPort());
 
+
         server.awaitTermination();
     }
+
 }

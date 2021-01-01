@@ -58,6 +58,37 @@ public final class GreeterGrpc {
     return getSayHelloMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<io.quarkus.example.UserAccountRequest,
+      io.quarkus.example.UserAccountResponse> getListUserAccountMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ListUserAccount",
+      requestType = io.quarkus.example.UserAccountRequest.class,
+      responseType = io.quarkus.example.UserAccountResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+  public static io.grpc.MethodDescriptor<io.quarkus.example.UserAccountRequest,
+      io.quarkus.example.UserAccountResponse> getListUserAccountMethod() {
+    io.grpc.MethodDescriptor<io.quarkus.example.UserAccountRequest, io.quarkus.example.UserAccountResponse> getListUserAccountMethod;
+    if ((getListUserAccountMethod = GreeterGrpc.getListUserAccountMethod) == null) {
+      synchronized (GreeterGrpc.class) {
+        if ((getListUserAccountMethod = GreeterGrpc.getListUserAccountMethod) == null) {
+          GreeterGrpc.getListUserAccountMethod = getListUserAccountMethod =
+              io.grpc.MethodDescriptor.<io.quarkus.example.UserAccountRequest, io.quarkus.example.UserAccountResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListUserAccount"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  io.quarkus.example.UserAccountRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  io.quarkus.example.UserAccountResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new GreeterMethodDescriptorSupplier("ListUserAccount"))
+              .build();
+        }
+      }
+    }
+    return getListUserAccountMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -113,6 +144,13 @@ public final class GreeterGrpc {
       asyncUnimplementedUnaryCall(getSayHelloMethod(), responseObserver);
     }
 
+    /**
+     */
+    public io.grpc.stub.StreamObserver<io.quarkus.example.UserAccountRequest> listUserAccount(
+        io.grpc.stub.StreamObserver<io.quarkus.example.UserAccountResponse> responseObserver) {
+      return asyncUnimplementedStreamingCall(getListUserAccountMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -122,6 +160,13 @@ public final class GreeterGrpc {
                 io.quarkus.example.HelloRequest,
                 io.quarkus.example.HelloReply>(
                   this, METHODID_SAY_HELLO)))
+          .addMethod(
+            getListUserAccountMethod(),
+            asyncBidiStreamingCall(
+              new MethodHandlers<
+                io.quarkus.example.UserAccountRequest,
+                io.quarkus.example.UserAccountResponse>(
+                  this, METHODID_LIST_USER_ACCOUNT)))
           .build();
     }
   }
@@ -146,6 +191,14 @@ public final class GreeterGrpc {
         io.grpc.stub.StreamObserver<io.quarkus.example.HelloReply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getSayHelloMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<io.quarkus.example.UserAccountRequest> listUserAccount(
+        io.grpc.stub.StreamObserver<io.quarkus.example.UserAccountResponse> responseObserver) {
+      return asyncBidiStreamingCall(
+          getChannel().newCall(getListUserAccountMethod(), getCallOptions()), responseObserver);
     }
   }
 
@@ -195,6 +248,7 @@ public final class GreeterGrpc {
   }
 
   private static final int METHODID_SAY_HELLO = 0;
+  private static final int METHODID_LIST_USER_ACCOUNT = 1;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -227,6 +281,9 @@ public final class GreeterGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_LIST_USER_ACCOUNT:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.listUserAccount(
+              (io.grpc.stub.StreamObserver<io.quarkus.example.UserAccountResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -279,6 +336,7 @@ public final class GreeterGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new GreeterFileDescriptorSupplier())
               .addMethod(getSayHelloMethod())
+              .addMethod(getListUserAccountMethod())
               .build();
         }
       }

@@ -24,6 +24,16 @@ public final class HelloWorldProto {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_helloworld_HelloReply_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_helloworld_UserAccountRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_helloworld_UserAccountRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_helloworld_UserAccountResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_helloworld_UserAccountResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -33,16 +43,25 @@ public final class HelloWorldProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020helloworld.proto\022\nhelloworld\"\034\n\014HelloR" +
-      "equest\022\014\n\004text\030\001 \001(\t\"\035\n\nHelloReply\022\017\n\007me" +
-      "ssage\030\001 \001(\t2I\n\007Greeter\022>\n\010SayHello\022\030.hel" +
-      "loworld.HelloRequest\032\026.helloworld.HelloR" +
-      "eply\"\000B\'\n\022io.quarkus.exampleB\017HelloWorld" +
-      "ProtoP\001b\006proto3"
+      "\n\020helloworld.proto\022\nhelloworld\032\037google/p" +
+      "rotobuf/timestamp.proto\"\034\n\014HelloRequest\022" +
+      "\014\n\004text\030\001 \001(\t\"\035\n\nHelloReply\022\017\n\007message\030\001" +
+      " \001(\t\"9\n\022UserAccountRequest\022\014\n\004name\030\002 \001(\t" +
+      "\022\025\n\raccountdetail\030\003 \001(\t\"{\n\023UserAccountRe" +
+      "sponse\022-\n\ttimestamp\030\002 \001(\0132\032.google.proto" +
+      "buf.Timestamp\0225\n\raccountdetail\030\003 \001(\0132\036.h" +
+      "elloworld.UserAccountRequest2\241\001\n\007Greeter" +
+      "\022>\n\010SayHello\022\030.helloworld.HelloRequest\032\026" +
+      ".helloworld.HelloReply\"\000\022V\n\017ListUserAcco" +
+      "unt\022\036.helloworld.UserAccountRequest\032\037.he" +
+      "lloworld.UserAccountResponse(\0010\001B\'\n\022io.q" +
+      "uarkus.exampleB\017HelloWorldProtoP\001b\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.google.protobuf.TimestampProto.getDescriptor(),
         });
     internal_static_helloworld_HelloRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -56,6 +75,19 @@ public final class HelloWorldProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_helloworld_HelloReply_descriptor,
         new java.lang.String[] { "Message", });
+    internal_static_helloworld_UserAccountRequest_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_helloworld_UserAccountRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_helloworld_UserAccountRequest_descriptor,
+        new java.lang.String[] { "Name", "Accountdetail", });
+    internal_static_helloworld_UserAccountResponse_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_helloworld_UserAccountResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_helloworld_UserAccountResponse_descriptor,
+        new java.lang.String[] { "Timestamp", "Accountdetail", });
+    com.google.protobuf.TimestampProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -1,5 +1,5 @@
 syntax = "proto3";
-
+import "google/protobuf/timestamp.proto";
 option java_multiple_files = true;
 option java_package = "io.quarkus.example";
 option java_outer_classname = "HelloWorldProto";
@@ -9,6 +9,8 @@ package helloworld;
 service Greeter {
 
   rpc SayHello (HelloRequest) returns (HelloReply) {}
+
+  rpc ListUserAccount(stream UserAccountRequest) returns (stream UserAccountResponse);
 }
 
 
@@ -18,4 +20,13 @@ message HelloRequest {
 
 message HelloReply {
   string message = 1;
+}
+message UserAccountRequest{
+  string name =2;
+  string accountdetail=3;
+}
+message UserAccountResponse{
+  google.protobuf.Timestamp timestamp = 2;
+ UserAccountRequest accountdetail =3;
+
 }

@@ -33,6 +33,8 @@ public class HelloWorldClient {
 public class HelloWorldClient {
 
     public static void main(String[] args){
+
+
         Scanner myObj =new Scanner(System.in);
         System.out.println("Say hi in any language");
         String text = myObj.nextLine();
@@ -43,6 +45,8 @@ public class HelloWorldClient {
         GreeterGrpc.GreeterBlockingStub blockingStub=  GreeterGrpc.newBlockingStub(channel);
         response = blockingStub.sayHello(request);
         System.out.println(response.getMessage());
+
+
 
     }
 }
