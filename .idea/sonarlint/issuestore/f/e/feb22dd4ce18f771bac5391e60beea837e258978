@@ -1,0 +1,18 @@
+
+M
+java:S1128
+"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ŒßÉÙë.
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(ß£¿™8ŒßÉÙë.
+[
+java:S1128">Remove this unused import 'javax.imageio.spi.ServiceRegistry'.(æ£Å8›Á§Ùë.
+O
+java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8ŒßÉÙë.
+M
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8ŒßÉÙë.
+T
+java:S1128	"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8ŒßÉÙë.
+T
+java:S1128"7Remove this unused import 'sun.jvm.hotspot.HelloWorld'.(ß£¿™8ŒßÉÙë.
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8ŒßÉÙë.

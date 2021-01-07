@@ -301,3 +301,17 @@ S
 #src/main/java/HelloWorldClient.java,2/b/2b32fe4b75f878b692f0626e59dc00b0df69b0ff
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+G
+src/main/java/User.java,c/c/cc4d6aa268d93c9fcea3805c8ed34ed49cede1a9
+Å
+Qbuild/generated/source/proto/main/java/io/quarkus/example/UserAccountRequest.java,8/2/821a29c94dd00fc20307a62e30c1703254b49795
+ä
+Zbuild/generated/source/proto/main/java/io/quarkus/example/UserAccountRequestOrBuilder.java,3/1/310f06cc025be5f502411d74ef3b6151ad3c8fe0
+Ç
+Rbuild/generated/source/proto/main/java/io/quarkus/example/UserAccountResponse.java,5/a/5a355765c8e9820d0e68aa7c3471d82bedaacaf0
+ã
+[build/generated/source/proto/main/java/io/quarkus/example/UserAccountResponseOrBuilder.java,3/a/3aef295887904acff8676e80dfaedacfb3710b16
+K
+src/main/java/UserRepo.java,1/d/1d6349b82ed2ba8087327f1ab6f2744d0fed5bec
+Q
+!src/main/java/UserController.java,a/d/ad79934489e8b6be9f61d51169be29ab48848992

@@ -1,0 +1,32 @@
+
+o	java:S116n"URename this field "timestamp_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„©üÿÿÿÿ
+t	java:S116…"YRename this field "accountdetail_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò£Ûšıÿÿÿÿ
+H
+java:S1199@"-Extract this nested code block into a method.(­ƒíéşÿÿÿÿ
+w	java:S116ö"\Rename this field "timestampBuilder_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÕÊÍøÿÿÿÿ
+z
+java:S4144"cUpdate this method so that its implementation is not identical to "getDefaultInstance" on line 759.(Îâç
+u
+java:S2293á"YReplace the type specification in this constructor call with the diamond operator ("<>").(öÖ—ùÿÿÿÿ
+C
+java:S11993"-Extract this nested code block into a method.(ò‘
+u
+java:S1488È"_Immediately return this expression instead of assigning it to the temporary variable "builder".(«‰Ÿ~
+o
+java:S2975¦"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Îõ¾Òûÿÿÿÿ
+F
+java:S1066Ö"/Merge this if statement with the enclosing one.(—„ÊÀ
+?	java:S108ë")Either remove or fill this block of code.(º„ç½
+K
+java:S1066Ñ"/Merge this if statement with the enclosing one.(ÖşŒåıÿÿÿÿ
+]
+java:S1126Ù"AReplace this if-then-else statement by a single return statement.(®Èäîÿÿÿÿÿ
+v	java:S116í"`Rename this field "accountdetailBuilder_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ¤˜‰
+t	java:S116ë"YRename this field "accountdetail_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò£Ûšıÿÿÿÿ
+p
+java:S2293Ø"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ê¶²˜
+H
+java:S1199M"-Extract this nested code block into a method.(Î—­Šşÿÿÿÿ
+m
+java:S3776!"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(‡ÆøÄşÿÿÿÿ
+p	java:S116ô"URename this field "timestamp_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„©üÿÿÿÿ

@@ -1,0 +1,20 @@
+
+
+java:S4144¦"cUpdate this method so that its implementation is not identical to "getDefaultInstance" on line 525.(š“´ùÿÿÿÿ
+O
+java:S11994"-Extract this nested code block into a method.(ê×Êüÿÿÿÿ8¬Úåê.
+O
+java:S1199:"-Extract this nested code block into a method.(Î—­Šşÿÿÿÿ8¬Úåê.
+|
+java:S1488•"_Immediately return this expression instead of assigning it to the temporary variable "builder".(«‰Ÿ~8¬Úåê.
+t
+java:S3077["WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(¥’Üï8¬Úåê.
+l	java:S116["PRename this field "text_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥’Üï8¬Úåê.
+D
+java:S1948["'Make "text_" transient or serializable.(¥’Üï8¬Úåê.
+d
+java:S1126¬"AReplace this if-then-else statement by a single return statement.(®Èäîÿÿÿÿÿ8¬Úåê.
+m	java:S116¬"PRename this field "text_" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ÷‘š8¬Úåê.
+F	java:S108¸")Either remove or fill this block of code.(º„ç½8¬Úåê.
+v
+java:S2975à"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Îõ¾Òûÿÿÿÿ8¬Úåê.
